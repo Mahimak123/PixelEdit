@@ -1,100 +1,187 @@
-PixelEdit is a responsive browser-based image editor built with HTML, CSS, JavaScript, Bootstrap, Bootstrap Icons, and Cropper.js. It offers a clean SaaS-style interface for uploading, editing, cropping, adjusting, previewing, and exporting images directly in the browser.
+# PixelEdit
 
-Features
-Responsive SaaS-style editor layout
-Sidebar controls aligned with the canvas workspace
-Scrollable image workspace
-Auto-fit uploaded image to the canvas
-Image remains scrollable when zoomed in
-Click-to-upload image support
-Drag-and-drop image upload
-File name preview after upload
-Undo and redo editing history
-Reset all changes
-Export edited image as PNG
-Transform Tools
-Crop mode powered by Cropper.js
-Apply crop
-Cancel crop
-Crop opens at the current visible image size
-Rotate left
-Rotate right
-Flip horizontally
-Flip vertically
-Zoom Tools
-Zoom in
-Zoom out
-Live zoom percentage display
-Initial image fit based on available canvas size
-Scrollable workspace when image exceeds canvas size
-Presets
-PixelEdit includes multiple working image presets:
+PixelEdit is a responsive browser-based image editor built with HTML, CSS, JavaScript, Bootstrap, Bootstrap Icons, and Cropper.js. It provides a clean SaaS-style interface for uploading, editing, cropping, adjusting, previewing, and exporting images directly in the browser.
 
-Black and White
-Invert
-Dramatic
-Retro
-Cinematic
-Cool
-Warm
-Fade
-Preset buttons include custom color styles for a more polished editor interface.
+---
 
-Adjustments
-PixelEdit includes live adjustment sliders for:
+## Features
 
-Brightness
-Contrast
-Saturation
-Grayscale
-Sepia
-Invert
-Hue
-Blur
-Slider values update in real time while editing.
+### Responsive Editor Interface
 
-Collapsible Panels
-The Presets and Adjustments sections are collapsible, allowing users to keep the sidebar clean and only open the tools they need.
+* SaaS-style responsive layout
+* Sidebar tools aligned with the image workspace
+* Scrollable image canvas area
+* Auto-fit uploaded image to the canvas
+* Smooth scrolling when zoomed in
 
-Tech Stack
-HTML5
-CSS3
-JavaScript
-Bootstrap 5
-Bootstrap Icons
-Cropper.js
-Canvas API
-Project Structure
+### Image Upload
+
+* Click-to-upload support
+* Drag-and-drop image upload
+* File name preview after upload
+
+### Editing History
+
+* Undo changes
+* Redo changes
+* Reset all edits
+
+### Export
+
+* Export edited image as PNG
+* Final image rendered using the Canvas API
+
+---
+
+# Transform Tools
+
+### Crop Tools
+
+Powered by Cropper.js
+
+* Enter crop mode
+* Apply crop
+* Cancel crop
+* Crop opens at the current visible image size
+
+### Rotate & Flip
+
+* Rotate left
+* Rotate right
+* Flip horizontally
+* Flip vertically
+
+---
+
+# Zoom Tools
+
+* Zoom in
+* Zoom out
+* Live zoom percentage display
+* Initial image fit based on available workspace size
+* Scrollable workspace when image exceeds the visible area
+
+---
+
+# Presets
+
+PixelEdit includes multiple built-in image presets:
+
+* Black and White
+* Invert
+* Dramatic
+* Retro
+* Cinematic
+* Cool
+* Warm
+* Fade
+
+Preset buttons include custom colors for a polished editor interface.
+
+---
+
+# Adjustments
+
+Live adjustment sliders included for:
+
+* Brightness
+* Contrast
+* Saturation
+* Grayscale
+* Sepia
+* Invert
+* Hue
+* Blur
+
+All slider values update in real time while editing.
+
+---
+
+# Collapsible Panels
+
+The following sections are collapsible to keep the interface clean:
+
+* Presets
+* Adjustments
+
+Users can open only the tools they need.
+
+---
+
+# Tech Stack
+
+* HTML5
+* CSS3
+* JavaScript
+* Bootstrap 5
+* Bootstrap Icons
+* Cropper.js
+* Canvas API
+
+---
+
+# Project Structure
+
+```bash
 project-folder/
 ├── src/
-     ├── index.html
-     ├── styles.css
-     ├── editor.js
-How To Run
-Clone or download this repository.
-Open index.html in your browser.
-Upload an image.
-Start editing.
+│   ├── index.html
+│   ├── styles.css
+│   └── editor.js
+```
+
+---
+
+# How To Run
+
+1. Clone or download this repository.
+2. Open `index.html` in your browser.
+3. Upload an image.
+4. Start editing.
+
 No backend or installation is required.
 
-CDN Dependencies
+---
+
+# CDN Dependencies
+
 This project uses CDN links for:
 
-Bootstrap
-Bootstrap Icons
-Cropper.js
-Make sure you are connected to the internet when opening the project, unless you download these libraries locally.
+* Bootstrap
+* Bootstrap Icons
+* Cropper.js
 
-Usage
-Click Choose File to upload an image.
-Use the zoom controls to adjust the preview size.
-Use Enter Crop Mode to crop the image.
-Apply presets or manually adjust brightness, contrast, and saturation.
-Use undo and redo to move through edit history.
-Click Export Image to download the final edited PNG.
-Export
-The edited image is rendered using the browser Canvas API and downloaded as:
+Make sure you are connected to the internet when opening the project unless you download these libraries locally.
 
+---
+
+# Usage
+
+1. Click **Choose File** to upload an image.
+2. Use the zoom controls to adjust preview size.
+3. Use **Enter Crop Mode** to crop the image.
+4. Apply presets or manually adjust image settings.
+5. Use undo and redo to navigate edit history.
+6. Click **Export Image** to download the final PNG.
+
+---
+
+# Export Output
+
+The edited image is exported as:
+
+```bash
 edited-image.png
-Live Demo
-https://image-editor-inky-six.vercel.app/
+```
+
+---
+
+# Live Demo
+
+[PixelEdit Live Demo](https://image-editor-inky-six.vercel.app/?utm_source=chatgpt.com)
+
+---
+
+# License
+
+This project is open source and available for personal and educational use.
